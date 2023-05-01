@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
+*{
+    margin: 0;
+    padding:0;
+
+}
+
+body{
+    background: black;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+.sidebar{
+    background: black!important;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+}
+.sidebar_li{
+    list-style-type: none;
+    padding-top: 15px;
+    text-decoration: none;
+    color:white;
+}
+.sidebar_li:hover{
+    color: #808080;
+}
+.sidebar_ul{
+    padding-top: 15px;
+    padding-left: 15px; /* Отступ слева в браузере Firefox, Safari, Chrome */
+    text-decoration: none;
+}
+.wrapper{
+    width: 75%;
+    margin: 5% auto;
+}
+header .logo{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+ .presentation{
+    margin: 50px 0;
+    background: url('./img/bg.jpg') no-repeat;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+
+}
+ .presentation::after{
+   content: 'Лучшие цены на ПК  железо!!!';
+   position: absolute;
+   color: white;
+   top: 100px;
+   left: 50px;
+   width: 300px;
+   font-size: 40px;
+   font-weight: 600;
+}
+ .presentation::before{
+    content: 'по низким ценам!';
+    position: absolute;
+    color: white;
+    top: 300px;
+    left: 50px;
+    width: 300px;
+    font-size: 15px;
+    font-weight: 300;
+ }
+
+ footer{
+     text-align: center;
+     margin-top: 100px;
+ }
+ .main{
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 50px;
+ }
+
+.text_center{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.block{
+
+    text-decoration: none;
+    font-size: 15px;
+    margin: 4px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    text-indent: 5px;
+
+
+}
+.block:hover{
+    color: #fff;
+    border:red;
+}
+.card{
+    padding: 30px;
+}
+.card-text{
+    font-size: 12px;
+    text-align: start;
+}
+.btn-cont {
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    width: 80px;
+    height: 30px;
+}
+
+.super_center{
+    margin-left: auto;
+    margin-right: auto;
+}

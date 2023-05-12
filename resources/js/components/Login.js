@@ -8,7 +8,7 @@ import  React,{useState,useEffect} from 'react';
 import Sidebar from "./Sidebar";
 
 export default function Login() {
-    let user=JSON.parse(localStorage.getItem('user-info'))
+
     const [email,setEmail]=useState(null);
     const [password,setPassword]=useState(null);
     const navigate=useNavigate();
@@ -28,16 +28,23 @@ export default function Login() {
             },
             body:JSON.stringify(item)
         });
+
         result=await result.json();
         if(result[0]==="Error email or password can`t found!"){
             navigate('/register')
             return;
         }
+        let user=result.user;
+        let count_basket=result.count;
+        let role=result.role;
+        localStorage.setItem("user-info",JSON.stringify(user));
+        localStorage.setItem("count",JSON.stringify(count_basket));
+        user.role
 
-        localStorage.setItem("user-info",JSON.stringify(result))
-        result=JSON.stringify(result.role)
-        if(result){
-            localStorage.setItem("admin",true)
+
+
+        if(user.role===true){
+            localStorage.setItem("admin","true")
         }
         else{
             localStorage.setItem("admin","")

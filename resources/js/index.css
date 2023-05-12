@@ -133,3 +133,13 @@ header .logo{
     margin-left: auto;
     margin-right: auto;
 }
+h1{
+    text-align: center
+}
+.product_list_photo{
+    width: 50px;
+}
+.but {
+    display: flex;
+    justify-content: center;
+}

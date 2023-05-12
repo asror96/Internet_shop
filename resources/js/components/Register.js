@@ -39,7 +39,7 @@ export default function Register() {
         })
         localStorage.setItem("user-info",JSON.stringify(result))
         console.warn(result,result)
-        navigate('/')
+        window.location.replace('/login');
     }
 
   return (

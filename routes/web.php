@@ -34,7 +34,21 @@ Route::any('/processor', function () {
 Route::any('/motherboard', function () {
     return view('welcome');
 });
-Route::any('/addProduct', function () {
+Route::any('/Product', function () {
     return view('welcome');
 });
-
+Route::any('/basket', function () {
+    return view('welcome');
+});
+Route::any('/orderList', function () {
+    return view('welcome');
+});
+Route::any('/update/{id}', function () {
+    return view('welcome');
+});
+Route::any('/Users', function () {
+    return view('welcome');
+});
+Route::any('/search/{key}', function () {
+    return view('welcome');
+});

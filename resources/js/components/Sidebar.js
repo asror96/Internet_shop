@@ -19,16 +19,16 @@ export default function Sidebar() {
                 <div className="offcanvas-body  nav" >
                     <ul className="sidebar_ul">
 
-                        <NavLink  className="sidebar_li" to="/videoCard"  activeClassName="activeClicked">
+                        <NavLink  className="sidebar_li" onClick={()=>window.location.replace('/videoCard')}  activeClassName="activeClicked">
                             <li className="nav-item">Video Card</li>
                         </NavLink>
-                        <NavLink className="sidebar_li" exact to="/monitor" activeClassName="activeClicked">
+                        <NavLink className="sidebar_li" onClick={()=>window.location.replace('/monitor')}  activeClassName="activeClicked">
                             <li className="nav-item">Monitor</li>
                         </NavLink>
-                        <NavLink className="sidebar_li" exact to="/processor" activeClassName="activeClicked">
+                        <NavLink className="sidebar_li" onClick={()=>window.location.replace("/processor")}  activeClassName="activeClicked">
                             <li className="nav-item">Processor</li>
                         </NavLink>
-                        <NavLink className="sidebar_li" exact to="/motherboard" activeClassName="activeClicked">
+                        <NavLink className="sidebar_li" onClick={()=>window.location.replace("/motherboard")}activeClassName="activeClicked">
                             <li className="nav-item">Motherboard</li>
                         </NavLink>
                     </ul>

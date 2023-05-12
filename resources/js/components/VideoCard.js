@@ -25,6 +25,7 @@ export default function videoCard() {
          axios.post('http://localhost:8000/api/getItems',postData,axiosConfig)
              .then((response) => {
                 setData(response.data);
+                console.log(response.data)
              })
              .catch((err) => {
                  console.log("AXIOS ERROR: ", err);
@@ -43,8 +44,9 @@ export default function videoCard() {
                         {
                             data.map((item,index)=>{
                                 return(
-                                    <ItemCard img={item.image_path} title={item.name} description={item.description} price={item.price} key={index}/>
-                                )})}
+                                    <ItemCard id={item.id} img={item.image_path} title={item.name} description={item.description} price={item.price} />
+                                )})
+                        }
                     </div>
 
                 </section>

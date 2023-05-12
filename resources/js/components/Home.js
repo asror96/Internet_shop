@@ -14,7 +14,6 @@ export default function Home() {
         <Sidebar/>
         <Header/>
         <div style={{ display: 'flex', height: '100vh', overflow: 'scroll initial' }}>
-
             <div className='presentation'>
             </div>
         </div>
